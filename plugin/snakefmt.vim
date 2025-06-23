@@ -12,13 +12,6 @@
 "  1.0:
 "    - initial version
 
-if v:version < 700 || !has('python3')
-    let g:snakefmt_missing = "The snakemake.vim plugin requires vim7.0+ with Python 3.6 support."
-    command! Snakefmt echom g:snakefmt_missing
-    command! SnakefmtVersion echom g:snakefmt_missing
-    finish
-endif
-
 if exists("g:load_snakefmt")
    finish
 endif
